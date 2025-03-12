@@ -9,11 +9,11 @@ import org.apache.logging.log4j.Logger;
 
 public class EjercicioArrays {
 	
-	private static final Logger logger = LogManager.getLogger(EjercicioArrays.class);
+
 	
 	// Ejercicio 1: Encontrar la riqueza del cliente más rico
     public static int encontrarClienteMasRico(int[][] cuentas) {
-    	logger.debug("Calculando la riqueza del cliente más rico...");
+    	//.error("Calculando la riqueza del cliente más rico...");
     	int maxRiqueza = 0;
         for (int[] cliente : cuentas) {
             int riqueza = 0;
@@ -24,13 +24,12 @@ public class EjercicioArrays {
                 maxRiqueza = riqueza;
             }
         }
-        logger.info("La riqueza del cliente más rico es: {}", maxRiqueza);
         return maxRiqueza;
     }
 
     // Ejercicio 2: Ordenar las diagonales de la matriz
     public static int[][] ordenarDiagonales(int[][] mat) {
-    	logger.debug("Ordenando diagonales de la matriz...");
+    	
         int m = mat.length;
         int n = mat[0].length;
 
@@ -40,7 +39,7 @@ public class EjercicioArrays {
         for (int j = 1; j < n; j++) {
             ordenarDiagonal(mat, 0, j);
         }
-        logger.info("Diagonales ordenadas correctamente.");
+
         return mat;
     }
 
@@ -66,14 +65,14 @@ public class EjercicioArrays {
 
     // Ejercicio 3: Sumar todos los elementos de la matriz
     public static int sumaMatriz(int[][] mat) {
-    	logger.debug("Calculando la suma de la matriz...");
+
         int suma = 0;
         for (int[] fila : mat) {
             for (int elemento : fila) {
                 suma += elemento;
             }
         }
-        logger.info("La suma de la matriz es: {}", suma);
+
         return suma;
     }
 
