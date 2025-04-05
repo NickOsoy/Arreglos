@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 public class EjercicioTreeSetAndMap {
 	
-	   // ---------------------- EJERCICIO 1: Análisis de Frecuencia de Palabras ----------------------
+	   // ----------------------- EJERCICIO 1: Análisis de Frecuencia de Palabras ----------------------
     public TreeMap<String, Integer> analizarFrecuenciaPalabras(String rutaArchivo) throws IOException {
         TreeMap<String, Integer> frecuenciaPalabras = new TreeMap<>();
         BufferedReader lector = new BufferedReader(new FileReader(rutaArchivo));

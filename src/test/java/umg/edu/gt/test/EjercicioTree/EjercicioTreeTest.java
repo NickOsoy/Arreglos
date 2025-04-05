@@ -82,7 +82,7 @@ public class EjercicioTreeTest {
 	        System.out.println("\nEliminando eventos pasados a la fecha: " + fechaReferencia);
 	        ejercicios.eliminarEventosPasados(fechaReferencia);
 	       	        
-	        System.out.println("\nLista eventos actualizada:");
+	        System.out.println("\nLista de eventos actualizada:");
 	        ejercicios.imprimirEventos();
 	        
 	        // Ahora la conferencia debería ser la próxima
